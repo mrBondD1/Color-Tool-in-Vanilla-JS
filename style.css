@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: wheat;
+}
+
+.section{
+    width: 60%;
+    background: linear-gradient(120deg, rgba(48, 34, 128, 0.5) 0%, rgb(224, 152, 57) 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    box-shadow: 5px 5px 15px 1px #000000;
+}
+h1{
+    text-align: center;
+    font-size: 38px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 25px;
+    color: rgb(68, 64, 64);
+}
+label{
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 5px;
+    color: rgb(36, 42, 75);
+}
+#hexInput{
+    padding:5px 8px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    border: none;
+}
+
+#sliderText{
+    font-family: sans-serif;
+    padding: 2px;
+}
+p{
+    color: rgb(36, 42, 75);
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.box{
+    height: 100px;
+    width: 100%;
+    background-color: #cfc5b7;
+    margin-top: 5px;
+}
+
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-text {
+    font-size: 18px;
+    color: black;
+}
+
+.toggle-btn {
+    height: 30px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 6px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.inner-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 2px;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(20px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.5;
+}
